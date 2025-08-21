@@ -1,0 +1,9 @@
+Service: 
+ nginx:
+  image: nginx:latest
+  comtainer_name: nginx-web-Ubuntu
+  ports:
+    - "8081:80
+  volumes:
+    - ../web/usr/share/nginx/HTML:ro
+  restart: unless-stopped
